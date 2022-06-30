@@ -7,40 +7,56 @@
     <title>JP FUNCIA CAPACITACIONES</title>
 
     <!-- CSS -->
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-   <!-- GOOGLE FONT -->
-   <style>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- GOOGLE FONT -->
+    <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     </style>
 
 </head>
 <body>
-
-    <div class="grid-container">
+    <div>
         <!-- HEADER -->
         <header>
             <img src="Multimedia/Logo 1.jpg" alt="Logo de JP Funcia Capacitaciones" id="logo-jpfuncia">
             <!-- Menú Principal-->
-            <nav id="menu-nav">
-                <a href="index.html" id=subir class="boton-menu">Inicio</a>
-                <a href="./HTMLs/nosotros.html" class="boton-menu">Nosotros</a>
-                <a href="./HTMLs/capacitaciones.html" class="boton-menu capacitaciones">Capacitaciones
-                    <ul class="listado-capacitaciones">
-                        <li><a href="./HTMLs/capacitaciones.html#desviaciones">Desviaciones Angulares y Flexurales</a></li>
-                        <li><a href="./HTMLs/capacitaciones.html#distocia">Distocia y Yegua Post Parto</a></li>
-                        <li><a href="./HTMLs/capacitaciones.html#fisioterapia">Fisioterapia y Rehabilitación Equina</a></li>
-                        <li><a href="./HTMLs/capacitaciones.html#neonatologia">Neonatología</a></li>
-                        <li><a href="./HTMLs/capacitaciones.html#emergentologia">Emergentología Equina</a></li>
-                        <li><a href="./HTMLs/capacitaciones.html#sindrome-abdomen-agudo">Síndrome de Abdomen Agudo</a></li>
-                        <li><a href="./HTMLs/capacitaciones.html#eco-abdominal">Ecografía Abdominal</a></li>
-                        <!-- Le quiero poner los <a href="#desviaciones"> del html capacitaciones pero cuando los pongo
-                    me saca el menú desplegable -->
+
+            <nav class="navbar navbar-expand-lg bg-light" id="menu-nav">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active boton-menu" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link boton-menu" href="./HTMLs/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle capacitaciones" href="./HTMLs/capacitaciones.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Capacitaciones</a>
+                        <ul class="dropdown-menu listado-capacitaciones" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="./HTMLs/capacitaciones.html#desviaciones">Desviaciones Angulares y Flexurales</a></li>
+                          <li><a class="dropdown-item" href="./HTMLs/capacitaciones.html#distocia">Distocia y Yegua Post Parto</a></li>
+                          <li><a class="dropdown-item" href="./HTMLs/capacitaciones.html#fisioterapia">Fisioterapia y Rehabilitación Equina</a></li>
+                          <li><a class="dropdown-item" href="./HTMLs/capacitaciones.html#neonatologia">Neonatología</a></li>
+                          <li><a class="dropdown-item" href="./HTMLs/capacitaciones.html#emergentologia">Emergentología Equina</a></li>
+                          <li><a class="dropdown-item" href="./HTMLs/capacitaciones.html#sindrome-abdomen-agudo">Síndrome de Abdomen Agudo</a></li>
+                          <li><a class="dropdown-item" href="./HTMLs/capacitaciones.html#eco-abdominal">Ecografía Abdominal</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link boton-menu" href="./HTMLs/oradores.html">Oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link boton-menu" href="#contacto">Contacto</a>
+                      </li>
                     </ul>
-                </a>
-                <a href="./HTMLs/oradores.html" class="boton-menu">Oradores</a>
-                <a href="#contacto" class="boton-menu">Contacto</a>
-            </nav>
+                  </div>
+                </div>
+              </nav>
         </header>
         <!-- FIN DEL HEADER -->
 
@@ -52,8 +68,34 @@
                 <h3 id="subtitulo-jpfuncia">Somos profesionales cuyo objetivo es brindar educación de calidad.</h3>
             </div>
             <!-- Debería ir un carrousel pero no se como se hace :( -->
-            <img src="Multimedia/Juampi y Ale operando 2.jpeg" alt="El dr. Juan Pablo Funcia y el dr. Alejandro
-            Guglielminetti operando" id="img-operando">
+            
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Multimedia/Yegua y potri.jpeg" class="d-block w-100" alt="Yegua junto a su potrillo">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Multimedia/Juampi y Ale operando 2.jpeg" class="d-block w-100" alt="Los drs. Juan Pablo Funcia y Alejandro Guglielminetti operando">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Multimedia/Pileta - Fisioterapia.jpeg" class="d-block w-100" alt="Fisioterapia">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- TAPA EL NAV BAR -->
+
+            
+            
+            <!-- <img src="Multimedia/Juampi y Ale operando 2.jpeg" alt="El dr. Juan Pablo Funcia y el dr. Alejandro
+            Guglielminetti operando" id="img-operando"> -->
         </section>
         <!-- FIN DE LA SECCIÓN 1 -->
 
@@ -61,28 +103,44 @@
 
         <!-- SECCIÓN 2: NOTICIAS -->
         <section class="section-noticias">
+
             <h3 class="titulo-noticias">NOTICIAS</h3>
-            <!-- Tengo que ver bien como las voy a linkear o si van a estar en mi propio html -->
-            <div class="noticias">
+            <div class="card noticias" style="width: 18rem;">
                 <article class="noticia-1">
-                    <h4>NOTICIA 1</h4>
-                    <img src="" alt="">
-                    <button>Leer más</button>
-                    <a href=""></a>
-                </article>
-                <article class="noticia-2">
-                    <h4>NOTICIA 2</h4>
-                    <img src="" alt="">
-                    <button>Leer más</button>
-                    <a href=""></a>
-                </article>
-                <article class="noticia-3">
-                    <h4>NOTICIA 3</h4>
-                    <img src="" alt="">
-                    <button>Leer más</button>
-                    <a href=""></a>
+                    <img src="Multimedia/Kawell.jpg" class="card-img-top" alt="Kawell">
+                    <div class="card-body">
+                    <h5 class="card-title">Pasantías en KAWELL</h5>
+                    <p class="card-text">Enterate de los pasos a seguir para poder realizar una pasantía en el Centro
+                    de Rehabilitación Hospital Equino Kawell</p>
+                    <a href="https://centrokawell.com.ar/" class="btn btn-primary">Visitar el sitio</a>
+                    </div>
                 </article>
             </div>
+
+            <div class="card noticias" style="width: 18rem;">
+                <article class="noticia-2">
+                    <img src="Multimedia/Polo.jpg" class="card-img-top" alt="Jugando al polo">
+                    <div class="card-body">
+                    <h5 class="card-title">Temporada de Polo</h5>
+                    <p class="card-text">Conoce todos los detalles acerca de la Triple Corona de Polo de Argentina</p>
+                    <a href="https://www.aapolo.com/es/news/4246" class="btn btn-primary">Leer más</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="card noticias" style="width: 18rem;">
+                <article class="noticia-3">
+                    <img src="Multimedia/Juampi y Ale operando 2.jpeg" class="card-img-top" alt="Cirugía Equina">
+                    <div class="card-body">
+                    <h5 class="card-title">¡Avances en la veterinaria equina!</h5>
+                    <p class="card-text">El día 15 de febrero se realizó una cirugía de descompresión del nervio
+                        supraescapular en yegua jugadora de polo. ¡Enterate del procedimiento en este artículo!</p>
+                    <a href="https://centrokawell.com.ar/" class="btn btn-primary">Leer más</a>
+                    </div>
+                </article>
+                <!-- Este tengo que cambiar el href, hay que crear la noticia -->
+            </div>
+
         </section>
         <!-- FIN DE LA SECCIÓN 2 -->
 
@@ -131,19 +189,99 @@
 
 
         <!-- SECCIÓN 5: PREGUNTAS FRECUENTES -->
+
         <section class="section-faq">
-            <h3 class="titulo-faq">PREGUNTAS FRECUENTES</h3>
-            <!--Se tiene que desplegar la pregunta para ver la respuesta. Me falta agregar los párrafos de adentro de cada pregunta pero como
-            no se como poner el desplegable, todavía no lo agrego -->
-            <ul class="lista-faq">
-                <li>¿Quiénes pueden participar de las capacitaciones?</li>
-                <li>¿Cómo me inscribo?</li>
-                <li>¿Cuáles son los medios de pago?</li>
-                <li>¿Qué pasa si abono la capacitación pero no puedo verla ese mismo día?</li>
-                <li>¿Otorgan certificados al finalizar la capacitación?</li>
-            </ul>
+
+            <div>
+                <h3 class="titulo-faq">PREGUNTAS FRECUENTES</h3>
+            </div>
+
+            <div class="accordion lista-faq" id="accordionExample">
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">¿Quiénes pueden participar de las capacitaciones?
+                    </button>
+                  </h4>
+
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Estudiantes de veterinaria y Médico/as Veterinarios.</strong> Por lo general, todas las personas que se
+                      dediquen al rubro veterinaria podrán participar de la misma. Esto, sin embargo, es una recomendación,
+                      ya que no existe una limitación para participar de las mismas.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">¿Cómo me inscribo?
+                    </button>
+                  </h4>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>En nuestra sección de capacitaciones.</strong> Una vez que ingreses a la parte de
+                      capacitaciones, seleccionas la que te interesa y le das click al botón de inscribirte.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">¿Cuáles son los
+                    medios de pago?</button>
+                  </h4>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Todo depende de si seas argentino o extranjero.</strong> Si sos argentino podes realizar el
+                      pago mediante Mercado Pago o realizar una transferencia bancaria. Si sos extranjero, nuestro medio
+                      de pago es a través de PayPal.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h4 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">¿Qué pasa si
+                      abono la capacitación pero no puedo verla ese mismo día?
+                      </button>
+                    </h4>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>¡La capacitación queda grabada!</strong> No te preocupes si no podes ver la capacitación
+                        ese mismo día. La misma queda grabada para que la veas durante un mes, luego de la fecha en que
+                        se dictó.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">¿Otorgan
+                      certificados al finalizar la capacitación?</button>
+                    </h4>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>¡Sí!</strong> Luego de participar de nuestras capacitaciones, te enviaremos por WhatsApp el
+                        certificado de la misma.
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+
         </section>
+
         <!-- FIN DE LA SECCIÓN 5 -->
+
 
 
         <!-- FOOTER -->
@@ -177,6 +315,8 @@
         </div>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 </html>
