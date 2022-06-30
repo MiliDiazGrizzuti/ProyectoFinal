@@ -9,39 +9,55 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../style.css">
 
-   <!-- GOOGLE FONT -->
-   <style>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- GOOGLE FONT -->
+    <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     </style>
 
 </head>
 <body>
     
-    <div class="grid-container-oradores">
-
+    <div>
         <!-- HEADER -->
         <header>
             <img src="../Multimedia/Logo 1.jpg" alt="Logo de JP Funcia Capacitaciones" id="logo-jpfuncia">
             <!-- Menú Principal-->
-            <nav id="menu-nav">
-                <a href="../index.html" id=subir class="boton-menu">Inicio</a>
-                <a href="nosotros.html" class="boton-menu">Nosotros</a>
-                <a href="capacitaciones.html" class="boton-menu capacitaciones">Capacitaciones
-                    <ul class="listado-capacitaciones">
-                        <li><a href="capacitaciones.html#desviaciones">Desviaciones Angulares y Flexurales</a></li>
-                        <li><a href="capacitaciones.html#distocia">Distocia y Yegua Post Parto</a></li>
-                        <li><a href="capacitaciones.html#fisioterapia">Fisioterapia y Rehabilitación Equina</a></li>
-                        <li><a href="capacitaciones.html#neonatologia">Neonatología</a></li>
-                        <li><a href="capacitaciones.html#emergentologia">Emergentología Equina</a></li>
-                        <li><a href="capacitaciones.html#sindrome-abdomen-agudo">Síndrome de Abdomen Agudo</a></li>
-                        <li><a href="capacitaciones.html#eco-abdominal">Ecografía Abdominal</a></li>
-                        <!-- Le quiero poner los <a href="#desviaciones"> del html capacitaciones pero cuando los pongo
-                        me saca el menú desplegable -->
+
+            <nav class="navbar navbar-expand-lg bg-light" id="menu-nav">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active boton-menu" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link boton-menu" href="nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle capacitaciones" href="capacitaciones.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Capacitaciones</a>
+                        <ul class="dropdown-menu listado-capacitaciones" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="capacitaciones.html#desviaciones">Desviaciones Angulares y Flexurales</a></li>
+                          <li><a class="dropdown-item" href="capacitaciones.html#distocia">Distocia y Yegua Post Parto</a></li>
+                          <li><a class="dropdown-item" href="capacitaciones.html#fisioterapia">Fisioterapia y Rehabilitación Equina</a></li>
+                          <li><a class="dropdown-item" href="capacitaciones.html#neonatologia">Neonatología</a></li>
+                          <li><a class="dropdown-item" href="capacitaciones.html#emergentologia">Emergentología Equina</a></li>
+                          <li><a class="dropdown-item" href="capacitaciones.html#sindrome-abdomen-agudo">Síndrome de Abdomen Agudo</a></li>
+                          <li><a class="dropdown-item" href="capacitaciones.html#eco-abdominal">Ecografía Abdominal</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link boton-menu" href="oradores.html">Oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link boton-menu" href="#contacto">Contacto</a>
+                      </li>
                     </ul>
-                </a>
-                <a href="oradores.html" class="boton-menu">Oradores</a>
-                <a href="#contacto" class="boton-menu">Contacto</a>
-            </nav>
+                  </div>
+                </div>
+              </nav>
         </header>
         <!-- FIN DEL HEADER -->
 
@@ -134,5 +150,7 @@
     
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
