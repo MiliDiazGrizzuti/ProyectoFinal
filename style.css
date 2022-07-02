@@ -100,7 +100,6 @@ h4 {
     list-style-type: none;
 }
 
-
 #logo-jpfuncia {
     width: 30%;
 }
@@ -143,6 +142,66 @@ h4 {
 
 
 
+/* GRID INDEX */
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section-titulo"
+    "section-noticias"
+    "section-sponsors"
+    "section-opiniones"
+    "section-faq"
+    "footer"
+    "volver-arriba";
+    grid-template-rows: 2fr 0.5fr 2fr 2fr 2fr 1fr;
+    /* No se si se aplicó bien */
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+}
+
+.section-titulo {
+    grid-area: section-titulo;
+}
+
+.section-noticias {
+    grid-area: section-noticias;
+    background-color: white;
+}
+
+.section-sponsors {
+    grid-area: section-sponsors;
+}
+
+.section-opiniones {
+    grid-area: section-opiniones;
+    background-color: white;
+}
+
+.section-faq {
+    grid-area: section-faq;
+}
+
+footer {
+    grid-area: footer;
+    background-color: white;
+}
+
+.volver-arriba {
+    grid-area: volver-arriba;
+    background-color: white;
+}
+
+/* FIN DEL GRID - INDEX */
+
+
+
+
 
 /* SECCIÓN 1: IMAGENES Y RESUMEN DE JP FUNCIA CAPACITACIONES */
 
@@ -165,11 +224,10 @@ h4 {
     text-align: center;
 }
 
-#carouselExampleControls {
+#img-operando {
     width: 50%;
     object-fit: contain;
 }
-
 
 /* YO QUIERO QUE SE VEA MAS GRANDE, PERO SI LO AGRANDO SE CHOCA CON LA IMAGEN ( Y TIENE PUESTO EL WRAP :( ) */
 
@@ -257,7 +315,7 @@ h4 {
     padding-top: 10px;
 }
 
-.lista-faq {
+.section-faq ul {
     list-style-type: none;
     margin-top: 15px;
 }
@@ -367,6 +425,58 @@ footer {
 
 
 /* HTML NOSOTROS */
+
+
+/* GRID NOSOTROS */
+
+.grid-container-nosotros {
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "section1"
+    "section2"
+    "section3"
+    "footer"
+    "volver-inicio";
+    grid-template-rows: 0.5fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    grid-area: section2;
+    background-color: white;
+}
+
+.section3 {
+    grid-area: section3;
+}
+
+footer {
+    grid-area: footer;
+    background-color: white;
+} 
+
+.volver-inicio {
+    grid-area: volver-inicio;
+    background-color: white;
+} 
+
+/* FIN DEL GRID - NOSOTROS */
+
+
+
+
 
 
 /* SECTION 1 - TITULO NOSOTROS */
@@ -491,6 +601,91 @@ div.valores {
 
 
 /* HTML CAPACITACIONES */
+
+
+/* GRID CAPACITACIONES */
+
+.grid-container-capacitaciones {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section1-capacitaciones"
+    "section2-capacitaciones"
+    "section3-capacitaciones"
+    "section4-capacitaciones"
+    "section5-capacitaciones"
+    "section6-capacitaciones"
+    "section7-capacitaciones"
+    "section8-capacitaciones"
+    "section9-capacitaciones"
+    "section-faq-capacitaciones"
+    "footer-capacitaciones"
+    "volver-inicio";
+    grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+}
+
+.section1-capacitaciones {
+    grid-area: section1-capacitaciones;
+}
+
+.section2-capacitaciones {
+    grid-area: section2-capacitaciones;
+    background-color: white;
+}
+
+.section3-capacitaciones {
+    grid-area: section3-capacitaciones;
+}
+
+.section4-capacitaciones {
+    grid-area: section4-capacitaciones;
+    background-color: white;
+}
+
+.section5-capacitaciones {
+    grid-area: section5-capacitaciones;
+}
+
+.section6-capacitaciones {
+    grid-area: section6-capacitaciones;
+    background-color: white;
+}
+
+.section7-capacitaciones {
+    grid-area: section7-capacitaciones;
+}
+
+.section8-capacitaciones {
+    grid-area: section8-capacitaciones;
+    background-color: white;
+}
+
+.section9-capacitaciones {
+    grid-area: section9-capacitaciones;
+}
+
+.section-faq-capacitaciones {
+    grid-area: section-faq-capacitaciones;
+    background-color: white;
+}
+
+.footer-capacitaciones {
+    grid-area: footer-capacitaciones;
+} 
+
+.volver-inicio {
+    grid-area: volver-inicio;
+} 
+
+/* FIN DEL GRID - CAPACITACIONES */
+
 
 
 /* SECTION 1 - TITULO CAPACITACIONES */
@@ -647,6 +842,47 @@ h2.titulo-capacitaciones {
 
 
 /* HTML ORADORES */
+
+
+/* GRID - ORADORES */
+
+.grid-container-oradores {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section1-oradores"
+    "section2-oradores"
+    "footer-oradores"
+    "volver-inicio";
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+}
+
+.section1-oradores {
+    grid-area: section1-oradores;
+}
+
+.section2-oradores {
+    grid-area: section2-oradores;
+    background-color: white;
+}
+
+.footer-oradores {
+    grid-area: footer-oradores;
+    background-color: rgb(116, 138, 180);
+} 
+
+.volver-inicio {
+    grid-area: volver-inicio;
+}
+
+/* FIN DEL GRID ORADORES */
+
 
 
 /* SECTION 1 - TITULO ORADORES */
