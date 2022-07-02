@@ -65,19 +65,6 @@ body {
 }
 
 
-
-header {
-    background-color: white;
-    position: sticky;
-    top: 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    font-weight: bolder;
-}
-
-
 h1 {
     font-weight: bolder;
 }
@@ -93,11 +80,29 @@ h4 {
 }
 
 
+header {
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 50;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bolder;
+}
+
 #menu-nav {
     display: flex;
     justify-content: space-evenly;
     width: 70%;
-    list-style-type: none;
+}
+
+
+#navbarNavDropdown > ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 
@@ -109,36 +114,6 @@ h4 {
     color: rgb(116, 138, 180);
     text-decoration: rgb(116, 138, 180);
 }
-
-
-
-
-.capacitaciones {
-    position: relative;
-    display: block;
-}
-
-.listado-capacitaciones {
-    width: 100px;
-    display: none;
-    list-style-type: none;
-    position: absolute;
-    text-align: center;
-}
-
-.capacitaciones:hover .listado-capacitaciones {
-    position: absolute;
-    display: block;
-    background-color: white;
-    color: rgb(65, 83, 143);
-    transform: scale(3);
-}
-
-
-/* ESTO DEL HOVER NO QUEDA HECHO, NO SE QUE ESTOY HACIENDO MAL */
-
-
-
 
 
 
@@ -167,11 +142,18 @@ h4 {
 
 #carouselExampleControls {
     width: 50%;
-    object-fit: contain;
 }
 
+.carouselExampleControls {
+    position: relative;
+}
 
-/* YO QUIERO QUE SE VEA MAS GRANDE, PERO SI LO AGRANDO SE CHOCA CON LA IMAGEN ( Y TIENE PUESTO EL WRAP :( ) */
+/* .carouselExampleControls img {
+    width: auto;
+    height: 300px;
+    max-height: 350px;
+    object-fit: contain;
+} */
 
 
 
@@ -179,26 +161,33 @@ h4 {
 
 .section-noticias {
     background-color: white;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .titulo-noticias {
-    padding: 10px;
+    padding: 20px;
 }
 
 .noticias {
     margin: 10px;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
+
+.card-title {
+    font-weight: bolder;
+}
+
 
 
 
 /* SECCIÓN 3: SPONSORS */
 
 .titulo-sponsors {
-    margin: 10px;
+    margin: 20px;
     padding-top: 10px;
 }
 
@@ -235,6 +224,7 @@ h4 {
 }
 
 
+
 /* SECCIÓN 4: OPINIONES DE ALUMNOS */
 
 .section-opiniones {
@@ -249,10 +239,10 @@ h4 {
 
 
 
+
 /* SECCIÓN 5: PREGUNTAS FRECUENTES */
 
 .section-faq {
-    height: 170px;
     margin: 15px;
     padding-top: 10px;
 }
@@ -262,26 +252,25 @@ h4 {
     margin-top: 15px;
 }
 
+#accordionExample button {
+    background-color: rgb(156, 169, 192);
+    font-weight: bolder;
+}
+
+.accordion-body {
+    background-color: rgb(156, 169, 192);
+}
+
+
 
 
 /* FOOTER */
 
-#logo-instagram {
+.logo-red-social {
     width: 25px;
     height: 25px;
     padding: 10px;
-}
-
-#logo-gmail {
-    width: 25px;
-    height: 25px;
-    padding: 10px;
-}
-
-#logo-whatsapp {
-    width: 25px;
-    height: 25px;
-    padding: 10px;
+    box-sizing: content-box;
 }
 
 footer {
@@ -388,7 +377,7 @@ div.texto-quienes-somos {
     background-color: white;
     font-size: larger;
 
-} 
+}
 
 div.quienes-somos {
     background-color: white;
@@ -511,7 +500,7 @@ h2.titulo-capacitaciones {
     padding: 30px;
     background-color: white;
     font-size: larger;
-} 
+}
 
 .div-button-capacitaciones {
     background-color: white;
@@ -615,19 +604,17 @@ h2.titulo-capacitaciones {
 /* SECTION 10 - PREGUNTAS FRECUENTES */
 
 .section-faq-capacitaciones {
-    height: 180px;
     width: 100%;
     background-color: white;
-}
-
-.section-faq-capacitaciones div {
     padding: 20px;
 }
+
 
 .section-faq-capacitaciones ul {
     list-style-type: none;
     margin-top: 15px;
 }
+
 
 
 /* FOOTER */
@@ -660,9 +647,6 @@ h2.titulo-oradores {
     font-size: 30px;
 }
 
-
-
-/* SECTION 2 - ORADORES */
 
 
 /* SECTION 2 - QUIENES SOMOS */

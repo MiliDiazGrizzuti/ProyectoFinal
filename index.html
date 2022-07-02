@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JP FUNCIA CAPACITACIONES</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -16,6 +13,11 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     </style>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
 
 </head>
 <body>
@@ -25,8 +27,12 @@
             <img src="Multimedia/Logo 1.jpg" alt="Logo de JP Funcia Capacitaciones" id="logo-jpfuncia">
             <!-- Menú Principal-->
 
-            <nav class="navbar navbar-expand-lg bg-light" id="menu-nav">
+            <nav class="navbar navbar-expand-lg" id="menu-nav">
                 <div class="container-fluid">
+                  <button class="navbar-toggler burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                       <li class="nav-item">
@@ -36,8 +42,9 @@
                         <a class="nav-link boton-menu" href="./HTMLs/nosotros.html">Nosotros</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle capacitaciones" href="./HTMLs/capacitaciones.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Capacitaciones</a>
-                        <ul class="dropdown-menu listado-capacitaciones" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="nav-link dropdown-toggle boton-menu" href="./HTMLs/capacitaciones.html" id="navbarDropdownMenuLink"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">Capacitaciones</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                           <li><a class="dropdown-item" href="./HTMLs/capacitaciones.html#desviaciones">Desviaciones Angulares y Flexurales</a></li>
                           <li><a class="dropdown-item" href="./HTMLs/capacitaciones.html#distocia">Distocia y Yegua Post Parto</a></li>
                           <li><a class="dropdown-item" href="./HTMLs/capacitaciones.html#fisioterapia">Fisioterapia y Rehabilitación Equina</a></li>
@@ -67,7 +74,6 @@
                 <h1 id="titulo-jpfuncia">JP FUNCIA CAPACITACIONES</h1>
                 <h3 id="subtitulo-jpfuncia">Somos profesionales cuyo objetivo es brindar educación de calidad.</h3>
             </div>
-            <!-- Debería ir un carrousel pero no se como se hace :( -->
             
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -91,11 +97,6 @@
                 </button>
             </div>
             <!-- TAPA EL NAV BAR -->
-
-            
-            
-            <!-- <img src="Multimedia/Juampi y Ale operando 2.jpeg" alt="El dr. Juan Pablo Funcia y el dr. Alejandro
-            Guglielminetti operando" id="img-operando"> -->
         </section>
         <!-- FIN DE LA SECCIÓN 1 -->
 
@@ -103,44 +104,44 @@
 
         <!-- SECCIÓN 2: NOTICIAS -->
         <section class="section-noticias">
-
-            <h3 class="titulo-noticias">NOTICIAS</h3>
-            <div class="card noticias" style="width: 18rem;">
+          <h3 class="titulo-noticias">NOTICIAS</h3>
+          <div class="noticias">
+            <div class="card" style="width: 18rem;">
                 <article class="noticia-1">
                     <img src="Multimedia/Kawell.jpg" class="card-img-top" alt="Kawell">
                     <div class="card-body">
                     <h5 class="card-title">Pasantías en KAWELL</h5>
                     <p class="card-text">Enterate de los pasos a seguir para poder realizar una pasantía en el Centro
                     de Rehabilitación Hospital Equino Kawell</p>
-                    <a href="https://centrokawell.com.ar/" class="btn btn-primary">Visitar el sitio</a>
+                    <a href="https://centrokawell.com.ar/" class="btn btn-primary" target="_blank">Visitar el sitio</a>
                     </div>
                 </article>
             </div>
 
-            <div class="card noticias" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
                 <article class="noticia-2">
                     <img src="Multimedia/Polo.jpg" class="card-img-top" alt="Jugando al polo">
                     <div class="card-body">
                     <h5 class="card-title">Temporada de Polo</h5>
                     <p class="card-text">Conoce todos los detalles acerca de la Triple Corona de Polo de Argentina</p>
-                    <a href="https://www.aapolo.com/es/news/4246" class="btn btn-primary">Leer más</a>
+                    <a href="https://www.aapolo.com/es/news/4246" class="btn btn-primary" target="_blank">Leer más</a>
                     </div>
                 </article>
             </div>
 
-            <div class="card noticias" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
                 <article class="noticia-3">
                     <img src="Multimedia/Juampi y Ale operando 2.jpeg" class="card-img-top" alt="Cirugía Equina">
                     <div class="card-body">
                     <h5 class="card-title">¡Avances en la veterinaria equina!</h5>
                     <p class="card-text">El día 15 de febrero se realizó una cirugía de descompresión del nervio
                         supraescapular en yegua jugadora de polo. ¡Enterate del procedimiento en este artículo!</p>
-                    <a href="https://centrokawell.com.ar/" class="btn btn-primary">Leer más</a>
+                    <a href="https://centrokawell.com.ar/" class="btn btn-primary" target="_blank">Leer más</a>
                     </div>
                 </article>
                 <!-- Este tengo que cambiar el href, hay que crear la noticia -->
             </div>
-
+          </div>
         </section>
         <!-- FIN DE LA SECCIÓN 2 -->
 
@@ -289,11 +290,11 @@
             <nav class="footer-contacto">
                 <h3 id="contacto">CONTACTO</h3>
                 <ul id="contacto-ul">
-                    <li class="instagram"><img src="Multimedia/Logo Instagram (2).png" alt="Logo Instagram" id="logo-instagram">
+                    <li class="instagram logo-red-social"><img src="Multimedia/Logo Instagram (2).png" alt="Logo Instagram">
                         <a href="https://www.instagram.com/juanpifuncia/" target="_blank" class="link-instagram">@juanpifuncia</a></li>
-                    <li class="gmail"><img src="Multimedia/Logo Gmail (2).png" alt="Logo Gmail" id="logo-gmail">
+                    <li class="gmail logo-red-social"><img src="Multimedia/Logo Gmail (2).png" alt="Logo Gmail">
                         <p class="parrafo-mail">jpfuncia.charlasvet@gmail.com</p></li>
-                    <li class="whatsapp"><img src="Multimedia/Logo WhatsApp (2).png" alt="Logo WhatsApp" id="logo-whatsapp">
+                    <li class="whatsapp logo-red-social"><img src="Multimedia/Logo WhatsApp (2).png" alt="Logo WhatsApp">
                         <a href="https://api.whatsapp.com/send/?phone=5491136822559" target="_blank" class="link-whatsapp-mili">
                         +5491136822559</a> / <a href="https://api.whatsapp.com/send/?phone=5491168780978" 
                         target="_blank" class="link-whatsapp-marian">+5491168780978</a></li>
