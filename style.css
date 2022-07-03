@@ -268,10 +268,8 @@ header {
 /* FOOTER */
 
 .logo-red-social {
-    width: 25px;
-    height: 25px;
-    padding: 10px;
-    box-sizing: content-box;
+    display: flex;
+    /* flex-wrap: wrap; */
 }
 
 footer {
@@ -282,30 +280,19 @@ footer {
     justify-content: space-between;
 }
 
-.gmail {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.instagram {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.whatsapp {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 #contacto-ul {
     padding-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     list-style-type: none;
+    padding-left: 10px;
+}
+
+#contacto-ul img {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
 }
 
 .link-instagram {
@@ -314,6 +301,7 @@ footer {
 
 .parrafo-mail {
     padding: 10px;
+    margin-bottom: auto;
 }
 
 .link-whatsapp-mili {
@@ -331,8 +319,8 @@ footer {
 
 
 
+
 .volver-arriba {
-    height: 30px;
     width: 100px;
     text-align: center;
     color: rgb(6, 6, 54);
