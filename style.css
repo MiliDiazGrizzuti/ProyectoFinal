@@ -105,15 +105,16 @@ header {
     justify-content: space-around;
 }
 
+#navbarNavDropdown > ul .boton-menu {
+    color: rgb(116, 138, 180);
+    text-decoration: rgb(116, 138, 180);
+}
 
 #logo-jpfuncia {
     width: 30%;
 }
 
-.boton-menu {
-    color: rgb(116, 138, 180);
-    text-decoration: rgb(116, 138, 180);
-}
+
 
 
 
