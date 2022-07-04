@@ -55,6 +55,20 @@
 }
 
 
+/* Impresión */
+
+@media print {
+    body {
+        color: black;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+
+
 
 /* HTML INDEX */
 
@@ -67,16 +81,29 @@ body {
 
 h1 {
     font-weight: bolder;
+    color: rgb(18, 56, 114);
+}
+
+
+h2 {
+    font-weight: bolder;
+    color: rgb(18, 56, 114);
 }
 
 
 h3 {
     font-weight: bolder;
+    color: rgb(18, 56, 114);
 }
 
 
 h4 {
     font-weight: bolder;
+    color: rgb(18, 56, 114);
+}
+
+p {
+    color: rgb(18, 56, 114);
 }
 
 
@@ -106,8 +133,9 @@ header {
 }
 
 #navbarNavDropdown > ul .boton-menu {
-    color: rgb(116, 138, 180);
     text-decoration: rgb(116, 138, 180);
+    color: rgb(18, 56, 114);
+
 }
 
 #logo-jpfuncia {
@@ -141,20 +169,21 @@ header {
     text-align: center;
 }
 
-#carouselExampleControls {
-    width: 50%;
+#titulo-jpfuncia {
+    font-family: 'Yeseva One', cursive;
+    color: rgb(18, 56, 114);
 }
 
-.carouselExampleControls {
+#subtitulo-jpfuncia {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(18, 56, 114);
+}
+
+#carouselExampleControls {
+    width: 50%;
     position: relative;
 }
 
-/* .carouselExampleControls img {
-    width: auto;
-    height: 300px;
-    max-height: 350px;
-    object-fit: contain;
-} */
 
 
 
@@ -180,6 +209,11 @@ header {
 
 .card-title {
     font-weight: bolder;
+}
+
+.card {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -269,12 +303,11 @@ header {
 
 .logo-red-social {
     display: flex;
-    /* flex-wrap: wrap; */
 }
 
 footer {
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -299,6 +332,11 @@ footer {
     padding: 10px;
 }
 
+.link-instagram :visited {
+    color: rgb(101, 28, 170);
+}
+/* No está funcionando */
+
 .parrafo-mail {
     padding: 10px;
     margin-bottom: auto;
@@ -308,9 +346,21 @@ footer {
     padding: 10px;
 }
 
+.link-whatsapp-mili :link {
+    color: rgb(101, 28, 170);
+}
+/* No está funcionando */
+
+
 .link-whatsapp-marian {
     padding: 10px;
 }
+
+.link-whatsapp-marian :link {
+    color: rgb(101, 28, 170);
+}
+/* No está funcionando */
+
 
 .newsletter {
     padding-right: 40px;
@@ -321,21 +371,24 @@ footer {
 
 
 .volver-arriba {
-    width: 100px;
+    width: 140px;
     text-align: center;
-    color: rgb(6, 6, 54);
+    color: rgb(18, 56, 114);
     border: 2px solid;
     border-color: rgb(57, 96, 168);
     background-color: rgb(57, 96, 168);
-    padding: 3px;
-    margin: 10px;
-    border-radius: 15px;
+    padding: 5px;
+    margin: 20px;
+    scroll-behavior: smooth;
 }
 
+.volver-arriba :link {
+    color: rgb(18, 56, 114);
+}
 
-
-
-
+.volver-arriba :visited {
+    color: rgb(101, 28, 170);
+}
 
 
 
@@ -351,11 +404,12 @@ footer {
 
 .section1 {
     padding: 30px;
-    height: 35px;
+    height: 90px;
 }
 
 h2.titulo-nosotros {
-    font-size: 30px;
+    font-size: 30px bolder;
+    font-family: 'Yeseva One', cursive;
 }
 
 
@@ -446,21 +500,24 @@ div.valores {
 /* FOOTER - NOSOTROS */
 
 .volver-inicio {
-    height: 30px;
-    width: 120px;
+    width: 140px;
     text-align: center;
-    color: rgb(6, 6, 54);
+    color: rgb(18, 56, 114);
     border: 2px solid;
     border-color: rgb(57, 96, 168);
     background-color: rgb(57, 96, 168);
-    padding: 3px;
-    margin: 10px;
-    border-radius: 15px;
+    font-size: larger bolder;
+    padding: 5px;
+    margin: 20px;
 }
 
+.volver-inicio :visited {
+    color: rgb(101, 28, 170);
+}
 
-
-
+.volver-inicio :link {
+    color: rgb(18, 56, 114);
+}
 
 
 
@@ -475,11 +532,12 @@ div.valores {
 
 .section1-capacitaciones {
     padding: 30px;
-    height: 35px;
+    height: 90px;
 }
 
 h2.titulo-capacitaciones {
-    font-size: 30px;
+    font-size: 30px bolder;
+    font-family: 'Yeseva One', cursive;
 }
 
 
@@ -629,11 +687,12 @@ h2.titulo-capacitaciones {
 
 .section1-oradores {
     padding: 30px;
-    height: 35px;
+    height: 90px;
 }
 
 h2.titulo-oradores {
-    font-size: 30px;
+    font-size: 30px bolder;
+    font-family: 'Yeseva One', cursive;
 }
 
 
@@ -641,7 +700,7 @@ h2.titulo-oradores {
 /* SECTION 2 - QUIENES SOMOS */
 
 .texto-oradores {
-    padding: 10px;
+    padding: 20px;
     background-color: white;
     font-size: larger;
 }
