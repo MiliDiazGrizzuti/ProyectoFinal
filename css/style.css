@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: bolder;
+}
+header img {
+  width: 30%;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  list-style-type: none;
+}
+header a {
+  color: rgb(116, 138, 180);
+  text-decoration: rgb(116, 138, 180);
+}
+
+body {
+  background-color: rgb(116, 138, 180);
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h3, h4 {
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=style.css.map */
