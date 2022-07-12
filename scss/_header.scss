@@ -1,0 +1,31 @@
+// Nesting o anidamiento
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bolder;
+    img {
+        width: 30%;
+    }
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+        list-style-type: none;
+        }
+        a {
+            color: rgb(116, 138, 180);
+            text-decoration: rgb(116, 138, 180);
+        }
+    };
