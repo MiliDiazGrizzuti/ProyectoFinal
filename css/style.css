@@ -55,17 +55,7 @@
 }
 
 
-/* Impresión */
 
-@media print {
-    body {
-        color: black;
-    }
-
-    .navbar {
-        display: none;
-    }
-}
 
 
 
@@ -137,6 +127,9 @@ header {
     color: rgb(18, 56, 114);
 
 }
+
+
+
 
 #logo-jpfuncia {
     width: 30%;
@@ -216,6 +209,9 @@ header {
     align-items: center;
 }
 
+.carousel-inner div img {
+    width: 50px;
+}
 
 
 
@@ -735,3 +731,23 @@ h2.titulo-oradores {
     background-color: rgb(116, 138, 180);
     padding: 20px;
 }
+
+
+
+
+
+/* Impresión */
+
+@media print {
+    body {
+        color: black;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
