@@ -75,7 +75,7 @@
 
 body {
     background-color: rgb(116, 138, 180);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -170,12 +170,12 @@ header {
 }
 
 #titulo-jpfuncia {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Bree Serif', serif;
     color: rgb(18, 56, 114);
 }
 
 #subtitulo-jpfuncia {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Cormorant', serif;
     color: rgb(18, 56, 114);
 }
 
@@ -373,21 +373,21 @@ footer {
 .volver-arriba {
     width: 140px;
     text-align: center;
-    color: rgb(18, 56, 114);
+    color: rgb(13, 32, 61);
     border: 2px solid;
-    border-color: rgb(57, 96, 168);
-    background-color: rgb(57, 96, 168);
+    border-color: rgb(22, 49, 97);
+    background-color: rgb(47, 81, 145);
     padding: 5px;
     margin: 20px;
     scroll-behavior: smooth;
 }
 
-.volver-arriba :link {
-    color: rgb(18, 56, 114);
+#subir :link {
+    color: rgb(214, 220, 228);
 }
 
-.volver-arriba :visited {
-    color: rgb(101, 28, 170);
+#subir :visited {
+    color: rgb(124, 70, 173);
 }
 
 
@@ -409,7 +409,7 @@ footer {
 
 h2.titulo-nosotros {
     font-size: 30px bolder;
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Bree Serif', serif;
 }
 
 
@@ -502,20 +502,21 @@ div.valores {
 .volver-inicio {
     width: 140px;
     text-align: center;
-    color: rgb(18, 56, 114);
+    color: rgb(13, 32, 61);
     border: 2px solid;
-    border-color: rgb(57, 96, 168);
-    background-color: rgb(57, 96, 168);
+    border-color: rgb(22, 49, 97);
+    background-color: rgb(47, 81, 145);
     font-size: larger bolder;
     padding: 5px;
     margin: 20px;
+    scroll-behavior: smooth;
 }
 
-.volver-inicio :visited {
+#inicio :visited {
     color: rgb(101, 28, 170);
 }
 
-.volver-inicio :link {
+#inicio :link {
     color: rgb(18, 56, 114);
 }
 
@@ -537,7 +538,7 @@ div.valores {
 
 h2.titulo-capacitaciones {
     font-size: 30px bolder;
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Bree Serif', serif;
 }
 
 
@@ -546,46 +547,54 @@ h2.titulo-capacitaciones {
 .div-parrafo-capacitaciones {
     padding: 30px;
     background-color: white;
-    font-size: larger;
+    font-size: large;
 }
 
 .div-button-capacitaciones {
     background-color: white;
-    padding: 40px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
+    text-decoration: none;
 }
 
 .button-capacitacion {
     background-color: rgb(32, 65, 126);
     border-radius: 200px;
     height: 100px;
-    width: 150px;
+    width: 200px;
     font-family: 'Montserrat', sans-serif;
     animation: change-color 5s infinite;
     text-align: center;
 }
+
+#capacitacion {
+    text-decoration: none;
+    color: white;
+}
+
 
 @keyframes change-color {
     0% {
         border-radius: 10%;
     }
 
-    25% {
-        width: 10%;
-        font-size: x-small;
+    30% {
+        width: 5%;
+        font-size: small;
         background-color: rgb(110, 110, 211);
     }
 
-    75% {
-        background-color: rgb(156, 156, 211);
+    70% {
+        background-color: rgb(144, 144, 207);
+        font-size: x-small;
 
     }
 
     100% {
-        border-radius: 20%;
+        border-radius: 15%;
     }
 }
 
@@ -596,6 +605,9 @@ h2.titulo-capacitaciones {
     padding: 20px;
 }
 
+#link-inscripcion {
+    text-decoration: none;
+}
 
 /* SECTION 4 - DISTOCIA */
 
@@ -671,8 +683,9 @@ h2.titulo-capacitaciones {
     padding: 20px;
 }
 
-
-
+.section-botoninicio {
+    background-color: white;
+}
 
 
 
@@ -692,7 +705,7 @@ h2.titulo-capacitaciones {
 
 h2.titulo-oradores {
     font-size: 30px bolder;
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Bree Serif', serif;
 }
 
 
